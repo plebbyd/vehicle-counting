@@ -25,6 +25,22 @@
             "group_id": null,
             "shape_type": "polygon",
             "flags": {}
+        },
+        {
+            "label": "direction01",
+            "points": [
+                [
+                    655.0645161290323,
+                    575.7741935483871
+                ],
+                [
+                    943.7741935483871,
+                    274.16129032258067
+                ]
+            ],
+            "group_id": null,
+            "shape_type": "line",
+            "flags": {}
         }
     ],
     "imagePath": "cam_04.png",
