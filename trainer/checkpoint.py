@@ -99,7 +99,7 @@ def get_class_names(path):
     return class_names, num_classes
 
 def get_config(path, ignore_keys=[]):
-    state = torch.hub.load('ultralytics/yolov5', 'yolov5x')
+    state = torch.hub.load('ultralytics/yolov5', 'yolov5x', pretrained=True)
     config_dict = state['config'] if 'config' in state.keys() else None
     if config_dict is None:
         return None
