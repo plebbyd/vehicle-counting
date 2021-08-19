@@ -104,5 +104,5 @@ def get_config(path, ignore_keys=[]):
     config = config_from_dict(config_dict, ignore_keys)
     return config
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     print(get_class_names('yolov5m.pth'))
