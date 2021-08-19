@@ -94,6 +94,8 @@ def get_class_names(path):
     state = torch.load(path)
     class_names = state['class_names'] if 'class_names' in state.keys() else None
     num_classes = len(class_names) if class_names is not None else 1
+    print("@@@@@@@class names  {}".format(class_names))
+    print("@@@@@@@num class  {}".format(num_classes))
     return class_names, num_classes
 
 def get_config(path, ignore_keys=[]):
@@ -104,5 +106,3 @@ def get_config(path, ignore_keys=[]):
     config = config_from_dict(config_dict, ignore_keys)
     return config
 
-if __name__ == '__main__':
-    print(get_class_names('yolov5m.pth'))
