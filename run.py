@@ -8,7 +8,7 @@ parser.add_argument('--weight', type=str, default = None,help='version of Effice
 parser.add_argument('--input_path', type=str, help='path to an image to inference')
 parser.add_argument('--output_path', type=str, help='path to save inferenced image')
 parser.add_argument('--gpus', type=str, default='0', help='path to save inferenced image')
-parser.add_argument('--min_conf', type=float, default= 0.4, help='minimum confidence for an object to be detect')
+parser.add_argument('--min_conf', type=float, default= 0.2, help='minimum confidence for an object to be detect')
 parser.add_argument('--min_iou', type=float, default=0.5, help='minimum iou threshold for non max suppression')
 parser.add_argument('--tta', action='store_true', help='whether to use test time augmentation')
 parser.add_argument('--tta_ensemble_mode', type=str, default='wbf', help='tta ensemble mode')
